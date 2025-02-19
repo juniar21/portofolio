@@ -21,7 +21,8 @@ body {
 } */
 body{
   margin: 0;
-  background: white;
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
   font-family: "Verdana";
+  color: white;
 }
  
