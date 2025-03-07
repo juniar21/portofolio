@@ -7,10 +7,7 @@ interface TypeAnimationProps {
   sequence: string[];
   delay?: number;
 }
-export default function TypeAnimations({
-  sequence,
-  delay = 1000,
-}: TypeAnimationProps) {
+export default function TypeAnimations({sequence, delay = 1000}: TypeAnimationProps) {
   const modifiedSequence: (string | number)[] = [];
 
   sequence.forEach((item, index) => {

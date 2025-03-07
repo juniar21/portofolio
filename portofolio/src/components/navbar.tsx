@@ -1,19 +1,44 @@
+"use client"
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import { DiAtlassian } from "react-icons/di";
+import { MdOutlineFileDownload } from "react-icons/md";
 import Link from "next/link";
-import Image from "next/image";
-export default function Navbar(){
-    return (
-        <nav className="fixed w-full top-0 md:flex">
-        <div className="font-bold md:h-[70px] w-[100vw] bg-[white] h-[65px] flex content-end justify-end text-black white sticky">
-                <div className="flex 2xl:mr-[800px] gap-3 h-10 mt-4 ">
-                 <Image src={"/5990ref.jpg"} alt="gambarprofil" width={40} height={40} className="md:rounded-full hidden md:block"/>
-                 <p className="mt-2 2xl:text-[13px] mr-10 text-[5px] hidden md:block">JUNIAR ARRANG BUA</p></div>
-            <div className="content-center text-center flex justify-center md:content-end gap-3 2xl:gap-6 mt-6 md:mr-[90px] 2xl:text-[13px] text-[9px] mr-8 pt-2">       
-            <Link href={"/"}>HOME</Link>
-            <Link href={"#targetabout"}>ABOUT</Link>
-            <Link href={"/project"}>PROJECTS</Link>
-            <Link href={"/contact"}>CONTACT</Link>
-            </div>
-        </div>
-    </nav>
-    )
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="flex items-center justify-between w-full max-w-[1100px] mx-auto h-[100px] px-4 md:flex-nowrap text-black font-bold text-sm">
+
+      <div className="flex items-center">
+        < DiAtlassian className="h-[50px] w-[40px]" />
+        Juniar Arrang Bua
+      </div>
+
+    
+      <div className="md:hidden">
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <FiX size={30} /> : <FiMenu size={30} />}
+        </button>
+      </div>
+
+    
+      <div
+        className={`absolute z-10 top-[100px] left-0 w-full md:mt-[80px] md:static md:flex md:w-auto md:gap-9 h-auto md:h-[100px] p-4 md:p-0 shadow-md md:shadow-none transition-all duration-300 ${
+          isOpen ? "block" : "hidden"
+        } md:flex`}
+      >
+        <Link href={"/"} className="block py-2 md:py-0 hover:border-b-2 text-black">About Me</Link>
+        <Link href={"/aboutus"} className="block py-2 md:py-0 hover:border-b-2 text-black">Skills</Link>
+        <Link href={"/menu"} className="block py-2 md:py-0 hover:border-b-2 text-black">Project</Link>
+        <Link href={"/kontak"} className="block py-2 md:py-0 hover:border-b-2 text-black">Contact Me</Link>
+      </div>
+
+  
+      <div className="hidden md:block">
+        <button className="flex p-2 outline text-white bg-black rounded-md">Resume <MdOutlineFileDownload className="h-[20px] w-[40px]" /></button>
+      </div>
+    </div>
+  );
 }
