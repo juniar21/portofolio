@@ -30,9 +30,9 @@ export default function Navbar() {
         } md:flex`}
       >
         <Link href={"/"} className="block py-2 md:py-0 hover:border-b-2 text-black">About Me</Link>
-        <Link href={"/aboutus"} className="block py-2 md:py-0 hover:border-b-2 text-black">Skills</Link>
-        <Link href={"/menu"} className="block py-2 md:py-0 hover:border-b-2 text-black">Project</Link>
-        <Link href={"/kontak"} className="block py-2 md:py-0 hover:border-b-2 text-black">Contact Me</Link>
+        <Link href={"/skills"} className="block py-2 md:py-0 hover:border-b-2 text-black">Skills</Link>
+        <Link href={"/project"} className="block py-2 md:py-0 hover:border-b-2 text-black">Project</Link>
+        <Link href={"/contact"} className="block py-2 md:py-0 hover:border-b-2 text-black">Contact Me</Link>
       </div>
 
   
