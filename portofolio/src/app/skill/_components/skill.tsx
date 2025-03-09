@@ -2,11 +2,17 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript, SiRedux } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
+import { Metadata } from "next";
 
+export const metadata:Metadata= {
+  title: "Skill",
+  description: "Page Skill",
+}
 export default function Skill() {
   return (
-    <div>
-      <div className="container mx-auto">
+    <footer>
+      <div>
+        <div className="container mx-auto">
           <div className="flex flex-wrap">
             <div className="w-full p-3 justify-center text-center">
               <h1 className="text-[50px]">
@@ -18,7 +24,7 @@ export default function Skill() {
                 </div>
                 <div className="h-[120px] w-[120px] border border-black p-2.5 max-sm:scale-75">
                   <SiTypescript className="h-[90px] w-[90px]" />
-                </div >
+                </div>
                 <div className="h-[120px] w-[120px] border border-black p-2.5 max-sm:scale-75">
                   <RiNextjsFill className="h-[100px] w-[100px]" />
                 </div>
@@ -37,5 +43,6 @@ export default function Skill() {
           </div>
         </div>
       </div>
+    </footer>
   );
 }

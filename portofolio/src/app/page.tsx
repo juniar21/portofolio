@@ -1,11 +1,15 @@
 import Hero from "@/components/hero";
-import Footer from "@/components/ui/footer";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title: "Home",
+  description: "Page Home",
+}
 
 export default function Home() {
   return (
    <div>
     <Hero/>
-    <Footer />
    </div>
   )
 }
