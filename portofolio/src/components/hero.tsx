@@ -25,15 +25,15 @@ export default function Hero() {
       <div className="container mx-auto">
         <div className="p-4">
           <div className="flex flex-wrap flex-row-reverse">
-            <div className="w-1/2 max-lg:w-full pb-[100px] ">
-              <Image
-                src={"/prog.png"}
-                width={600}
-                height={400}
-                alt="hero"
-                className="border-b-4 border-black"
-              />
-            </div>
+              <div className="w-1/2 max-lg:w-full pb-[100px] ">
+                <Image
+                  src={"/prog.png"}
+                  width={600}
+                  height={400}
+                  alt="hero"
+                  className="border-b-4 border-black"
+                />
+              </div>
             <div className="w-1/2 max-lg:w-full max-sm:mt-[-50px] lg:mt-[25px] p-5">
               <div>
                 <h1 className="text-[40px]">

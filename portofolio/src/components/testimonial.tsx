@@ -9,7 +9,7 @@ export default function Testimonial() {
           </p>
           <div className="grid lg:grid-cols-3 max-lg:grid-cols-1 gap-2">
             <div className="p-6 justify-items-center">
-              <div className="border border-black p-4 rounded-md justify-items-center text-center">
+              <div className="border border-black p-4 rounded-md justify-items-center text-center hover:scale-110">
                 <Avatar className="size-[70px] mt-5">
                   <AvatarImage
                     src="https://github.com/shadcn.png"
@@ -29,7 +29,7 @@ export default function Testimonial() {
               </div>
             </div>
             <div className="p-6 justify-items-center">
-              <div className="justify-items-center border border-black bg-black text-white p-4 rounded-md">
+              <div className="justify-items-center border border-black bg-black text-white p-4 rounded-md hover:scale-110">
                 <Avatar className="size-[70px] mt-5">
                   <AvatarImage
                     src="https://github.com/shadcn.png"
@@ -49,7 +49,7 @@ export default function Testimonial() {
               </div>
             </div>
             <div className="p-6 justify-items-center">
-              <div className="justify-items-center border border-black p-4 rounded-md">
+              <div className="justify-items-center border border-black p-4 rounded-md hover:scale-110">
                 <Avatar className="size-[70px] mt-5">
                   <AvatarImage
                     src="https://github.com/shadcn.png"
